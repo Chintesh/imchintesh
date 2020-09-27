@@ -1,50 +1,50 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.3",
-  "author": "Austin Green",
-  "dependencies": {
-    "bulma": "^0.9.0",
-    "gatsby": "^2.20.35",
-    "gatsby-image": "^2.3.5",
-    "gatsby-plugin-netlify": "^2.2.4",
-    "gatsby-plugin-netlify-cms": "^4.2.5",
-    "gatsby-plugin-purgecss": "^5.0.0",
-    "gatsby-plugin-react-helmet": "^3.2.5",
-    "gatsby-plugin-sass": "^2.2.4",
-    "gatsby-plugin-sharp": "^2.5.7",
-    "gatsby-remark-copy-linked-files": "^2.2.4",
-    "gatsby-remark-images": "^3.2.6",
-    "gatsby-remark-relative-images": "^0.3.0",
-    "gatsby-source-filesystem": "^2.2.5",
-    "gatsby-transformer-remark": "^2.7.5",
-    "gatsby-transformer-sharp": "^2.4.7",
-    "lodash": "^4.17.15",
-    "lodash-webpack-plugin": "^0.11.4",
-    "netlify-cms-app": "^2.9.6",
-    "netlify-cms-media-library-cloudinary": "^1.3.2",
-    "netlify-cms-media-library-uploadcare": "^0.5.2",
-    "node-sass": "^4.14.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-helmet": "^6.0.0",
-    "uuid": "^7.0.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  "name": "gatsby-starter-dropinblog",
+  "private": true,
+  "description": "A simple a beautiful starter for working with the DropInBlog CMS in Gatsby",
+  "version": "0.1.1",
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
-    "clean": "gatsby clean",
+    "build": "gatsby build",
+    "develop": "env-cmd .env gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "build": "npm run clean && gatsby build",
-    "develop": "npm run clean && gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/core": "7.0.0",
+    "@chakra-ui/core": "^0.5.2",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "babel-preset-gatsby": "^0.4.2",
+    "emotion-theming": "^10.0.27",
+    "env-cmd": "8.0.2",
+    "gatsby": "^2.21.33",
+    "gatsby-awesome-pagination": "^0.3.5",
+    "gatsby-image": "^2.2.41",
+    "gatsby-plugin-emotion": "^4.2.1",
+    "gatsby-plugin-purgecss": "^4.0.1",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sass": "^2.1.29",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-source-custom-api": "^2.1.4",
+    "gatsby-source-dropinblog": "^0.0.7",
+    "git": "^0.1.5",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DropInBlog/gatsby-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/DropInBlog/gatsby-starter/issues"
   }
 }
